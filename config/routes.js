@@ -46,6 +46,11 @@ module.exports.routes = {
    'POST /greenhouse/create': {
     controller: 'greenhouse',
     action: 'create'
-   }
+   },
+
+   'PATCH /greenhouse/update': {
+    controller: 'greenhouse',
+    action: 'update'
+   },
 
 };

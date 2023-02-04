@@ -22,7 +22,7 @@ module.exports = {
 
   fn: async function (inputs, exits) {
 
-    const user = await sails.models.user.findOne({ email:inputs.email }).decrypt();
+    const user = await sails.models.user.findOne({ email:inputs.email }).populate('greenHouses').decrypt();
 
     exits.success({
       data: user

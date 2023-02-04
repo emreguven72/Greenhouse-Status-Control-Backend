@@ -27,6 +27,12 @@ module.exports = {
       columnName: 'humidity'
     },
 
+    address: {
+      type: 'string',
+      required: true,
+      columnName: 'address'
+    },
+
     owner: {
       model: 'user'
     }

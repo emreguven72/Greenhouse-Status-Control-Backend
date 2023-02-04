@@ -20,6 +20,10 @@ module.exports = {
       type: 'number',
       required: true
     },
+    address: {
+      type: 'string',
+      required: true
+    },
     owner: {
       type: 'number',
       required: true
@@ -39,6 +43,7 @@ module.exports = {
       name: inputs.name,
       temperature: inputs.temperature,
       humidity: inputs.humidity,
+      address: inputs.address,
       owner: inputs.owner
     }).fetch();
 
